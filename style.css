@@ -44,7 +44,7 @@
         }
 
         /* --- Hero Section --- */
-        .hero-section {
+        .hero-section{
 
             background-image: linear-gradient(rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)), url(images/banner\ new\ p.jpg);
             background-size: cover;
