@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Realtors You Can Trust</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+
+   
+
+    <nav class="navbar navbar-expand-lg sticky-top bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="#">STAR INFRASTRUCTURE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">   <div style="border-bottom: 1.5px solid red; font-size: 20px;"><i class="fas fa-phone-alt me-1 text-primary"></i> +91-9149429296</div></a></li>
+
+         
+    
+                    <button class="btn btn-outline-dark px-4 rounded-0 btn-sm" data-bs-toggle="modal" data-bs-target="#enquiryModal">ENQUIRE NOW</button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container-fluid">
+            <h1 class="display-4 fw-bold">Explore Properties You Will Fall In Love With</h1>
+            <p class="lead">Find Your Dream Property in Tricity</p>
+
+            <div class="filter-box text-start">
+                <div class="row g-2">
+                       <div class="tab-wrapper text-start d-flex mb-2">
+                <div class="tab-item active fw-semibold fs-5">Residential</div>
+                <div class="tab-item ms-5 fw-semibold fs-5">Commercial</div>
+            </div>  
+                     <div class="col-md-4 ">
+                        
+                         <select class="form-select border-1 rounded-0 p-2">
+                            
+                            <option> <i class="fa-solid fa-location-dot me-2 text-secondary"></i> Select Your Desired Location From dropdown</option>
+                            <option>Mumbai*</option>
+                            <option>Delhi*</option>
+                             <option>Gujrat*</option>
+                            <option>Punjab*</option> <option>pryagraj*</option>
+                          
+                        </select>  
+                        <!-- <input type="text" class="form-control rounded-0 p-2" placeholder=" Select Your Desired Location From dropdown"> -->
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select border-1 rounded-0 p-2">
+                            <option>Property Type</option>
+                            <option>Flat</option>
+                            <option>Villa</option>
+                        </select>
+                    </div>
+                   
+                    <div class="col-md-2">
+ <select class="form-select border-1 rounded-0 p-2">
+                            <option>Budget</option>
+                            <option>Min 1000000*</option>
+                            <option>Max 3000000*</option>
+                        </select>                    </div>
+                         <div class="col-md-2">
+ <select class="form-select border-1 rounded-0 p-2">
+                            <option>Flat</option>
+                            <option>1BHK</option>
+                            <option>3BHK</option>
+                            <option>4BHK</option><option>5BHK</option><option>6BHK</option>
+                        </select>                    </div>
+                    <div class="col-md-2">
+                        <button class="btn-search"><i class="fa fa-search me-2"></i> SEARCH PROPERTY</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+                    <div class="project-card">
+                        <div class="img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80">
+                        </div>
+                        <div class="p-4">
+                            <h5 class="fw-bold mb-1">Avenue 125</h5>
+                            <p class="text-muted small">By Ever Rich Buildcon</p>
+                            <div class="price-tag mb-3">₹ 42.9 Lacs - 1.06 Cr</div>
+                            <div class="small text-secondary"><i class="fas fa-map-marker-alt text-danger me-2"></i>Sector - 125, Mohali</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+                    <div class="project-card">
+                        <div class="img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80">
+                        </div>
+                        <div class="p-4">
+                            <h5 class="fw-bold mb-1">Beverly Golf Avenue</h5>
+                            <p class="text-muted small">By Mohali City Homes</p>
+                            <div class="price-tag mb-3">₹ 1.37 Cr - 1.7 Cr</div>
+                            <div class="small text-secondary"><i class="fas fa-map-marker-alt text-danger me-2"></i>Phase 11, Mohali</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+                    <div class="project-card">
+                        <div class="img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80">
+                        </div>
+                        <div class="p-4">
+                            <h5 class="fw-bold mb-1">Mona City Home</h5>
+                            <p class="text-muted small">By Mohali City Homes</p>
+                            <div class="price-tag mb-3">₹ 35 Lacs - 39 Lacs</div>
+                            <div class="small text-secondary"><i class="fas fa-map-marker-alt text-danger me-2"></i>Sector-115, Mohali</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="text-white fw-bold mb-4">STAR INFRASTRUCTURE</h5>
+                    <p class="small">Leading real estate consultants in Tricity, providing expert advice for residential and commercial investments.</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="text-white fw-bold mb-4">CONTACT INFO</h5>
+                    <p class="small mb-2"><i class="fas fa-phone-alt me-2 text-gold"></i> +91-9149429296</p>
+                    <p class="small mb-2"><i class="fas fa-envelope me-2 text-gold"></i> info@starinfrastructure.com</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <h5 class="text-white fw-bold mb-4">FOLLOW US</h5>
+                    <div class="d-flex gap-3 justify-content-lg-end">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <a href="https://wa.me/919149429296" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a> -->
+
+    <div class="modal fade" id="enquiryModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold">Enquire Now</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Full Name*" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email Address*" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="Phone Number*" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="3" placeholder="I'm interested in..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">SUBMIT REQUEST</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

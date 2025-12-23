@@ -1,0 +1,235 @@
+        :root {
+            --brand-blue: #1a3c6d;
+            --brand-gold: #c5a059;
+            --text-dark: #333333;
+            --light-border: #eeeeee;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-dark);
+        }
+
+        /* --- Navbar & Top Bar --- */
+        .top-bar {
+            background: #fff;
+            border-bottom: 1px solid var(--light-border);
+            padding: 8px 0;
+            font-size: 13px;
+        }
+
+        .navbar {
+            border-bottom: 1px solid var(--light-border);
+            padding: 25px 0;
+            background: #fff !important;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--brand-blue) !important;
+            font-size: 22px;
+        }
+
+        .nav-link {
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: 600;
+            color: #666666 !important;
+            margin: 0 10px;
+            transition: 0.3s;
+        }
+
+        .nav-link:hover {
+            color: var(--brand-gold) !important;
+        }
+
+        /* --- Hero Section --- */
+        .hero-section {
+
+            background-image: linear-gradient(rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)), url(images/banner\ new\ p.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 60px 0;
+        }
+
+        /* --- Search Filter Box --- */
+        .filter-box {
+            background: rgba(255, 255, 255, 0.98);
+            padding: 35px;
+            border-radius: 4px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            /* max-width: 1000px; */
+            margin: 120px auto 0;
+            color: #000;
+        }
+
+        .btn-search {
+            background: var(--brand-blue);
+            color: white;
+            border-radius: 0;
+            padding: 8px;
+            font-weight: 600;
+            width: 100%;
+            border: none;
+        }
+
+        .btn-search:hover {
+            background: var(--brand-gold);
+            color: white;
+        }
+
+        /* --- Project Cards & Animations --- */
+        .project-card {
+            border: 1px solid var(--light-border);
+            transition: all 0.4s ease;
+            background: #fff;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            border-color: var(--brand-gold);
+        }
+
+        .img-wrapper {
+            height: 240px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.6s;
+        }
+
+        .project-card:hover .img-wrapper img {
+            transform: scale(1.1);
+        }
+
+        /* --- Detailed Styling --- */
+        .price-tag {
+            color: var(--brand-blue);
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .section-title {
+            font-weight: 700;
+            color: var(--brand-blue);
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .section-title::after {
+            content: '';
+            background: var(--brand-gold);
+            height: 3px;
+            width: 50px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* --- WhatsApp & Floating Elements --- */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            z-index: 1000;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* --- Form Styling (Popup) --- */
+        .modal-content {
+            border-radius: 0;
+            border: none;
+        }
+
+        .modal-header {
+            background: var(--brand-blue);
+            color: white;
+            border-radius: 0;
+        }
+
+        .form-control {
+            border-radius: 0;
+            border: 1px solid #ddd;
+            padding: 12px;
+        }
+
+        .btn-submit {
+            background: var(--brand-gold);
+            color: white;
+            border: none;
+            font-weight: 700;
+            width: 100%;
+            padding: 12px;
+        }
+
+        /* Footer */
+        footer {
+            background: #111;
+            color: #fff;
+            padding: 60px 0 30px;
+        }
+
+        footer a {
+            color: #aaa;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        footer a:hover {
+            color: var(--brand-gold);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 1.8rem;
+            }
+
+            .filter-box {
+                padding: 15px;
+                margin-top: 20px;
+            }
+        }
+
+        .btn-outline-dark {
+            position: fixed;
+            right: 0;
+            top: 30%;
+            transform: translateY(-50%) rotate(-90deg);
+            transform-origin: right bottom;
+            background: var(--brand-gold);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            z-index: 999;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 8px 8px 0 0;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
