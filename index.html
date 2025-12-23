@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Realtors You Can Trust</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-   
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
-   
+
 
     <nav class="navbar navbar-expand-lg sticky-top bg-white">
         <div class="container">
-            <a class="navbar-brand" href="#">STAR INFRASTRUCTURE</a>
+            <div class="logo">
+                <img src="images/alliedhomes-logo (2).png" alt="">
+                <span class="ms-2" style="font-weight: 600; font-size: 16px;">Aajneeti</span>
+            </div>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -29,38 +37,44 @@
                     <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">   <div style="border-bottom: 1.5px solid red; font-size: 20px;"><i class="fas fa-phone-alt me-1 text-primary"></i> +91-9149429296</div></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">
+                            <div style="border-bottom: 1.5px solid red; font-size: 20px;"><i
+                                    class="fas fa-phone-alt me-1 text-primary"></i> +91-9149429296</div>
+                        </a></li>
 
-         
-    
-                    <button class="btn btn-outline-dark px-4 rounded-0 btn-sm" data-bs-toggle="modal" data-bs-target="#enquiryModal">ENQUIRE NOW</button>
+
+
+                    <button class="btn btn-outline-dark px-4 rounded-0 btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#enquiryModal">ENQUIRE NOW</button>
                 </ul>
             </div>
         </div>
     </nav>
 
     <section class="hero-section">
-        <div class="container-fluid">
+        <div class="container-fluid new-hro">
             <h1 class="display-4 fw-bold">Explore Properties You Will Fall In Love With</h1>
             <p class="lead">Find Your Dream Property in Tricity</p>
 
             <div class="filter-box text-start">
                 <div class="row g-2">
-                       <div class="tab-wrapper text-start d-flex mb-2">
-                <div class="tab-item active fw-semibold fs-5">Residential</div>
-                <div class="tab-item ms-5 fw-semibold fs-5">Commercial</div>
-            </div>  
-                     <div class="col-md-4 ">
-                        
-                         <select class="form-select border-1 rounded-0 p-2">
-                            
-                            <option> <i class="fa-solid fa-location-dot me-2 text-secondary"></i> Select Your Desired Location From dropdown</option>
+                    <div class="tab-wrapper text-start d-flex mb-2">
+                        <div class="tab-item active fw-semibold fs-5">Residential</div>
+                        <div class="tab-item ms-5 fw-semibold fs-5">Commercial</div>
+                    </div>
+                    <div class="col-md-4 ">
+
+                        <select class="form-select border-1 rounded-0 p-2">
+
+                            <option> <i class="fa-solid fa-location-dot me-2 text-secondary"></i> Select Your Desired
+                                Location From dropdown</option>
                             <option>Mumbai*</option>
                             <option>Delhi*</option>
-                             <option>Gujrat*</option>
-                            <option>Punjab*</option> <option>pryagraj*</option>
-                          
-                        </select>  
+                            <option>Gujrat*</option>
+                            <option>Punjab*</option>
+                            <option>pryagraj*</option>
+
+                        </select>
                         <!-- <input type="text" class="form-control rounded-0 p-2" placeholder=" Select Your Desired Location From dropdown"> -->
                     </div>
                     <div class="col-md-2">
@@ -70,20 +84,24 @@
                             <option>Villa</option>
                         </select>
                     </div>
-                   
+
                     <div class="col-md-2">
- <select class="form-select border-1 rounded-0 p-2">
+                        <select class="form-select border-1 rounded-0 p-2">
                             <option>Budget</option>
                             <option>Min 1000000*</option>
                             <option>Max 3000000*</option>
-                        </select>                    </div>
-                         <div class="col-md-2">
- <select class="form-select border-1 rounded-0 p-2">
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select border-1 rounded-0 p-2">
                             <option>Flat</option>
                             <option>1BHK</option>
                             <option>3BHK</option>
-                            <option>4BHK</option><option>5BHK</option><option>6BHK</option>
-                        </select>                    </div>
+                            <option>4BHK</option>
+                            <option>5BHK</option>
+                            <option>6BHK</option>
+                        </select>
+                    </div>
                     <div class="col-md-2">
                         <button class="btn-search"><i class="fa fa-search me-2"></i> SEARCH PROPERTY</button>
                     </div>
@@ -92,62 +110,378 @@
         </div>
     </section>
 
-    <section class="py-5 bg-light">
-        <div class="container py-5">
-            <div class="text-center mb-5">
-                <h2 class="section-title">Featured Projects</h2>
-            </div>
+    <!-- section card  -->
 
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6" data-bs-toggle="modal" data-bs-target="#enquiryModal">
-                    <div class="project-card">
-                        <div class="img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80">
-                        </div>
-                        <div class="p-4">
-                            <h5 class="fw-bold mb-1">Avenue 125</h5>
-                            <p class="text-muted small">By Ever Rich Buildcon</p>
-                            <div class="price-tag mb-3">₹ 42.9 Lacs - 1.06 Cr</div>
-                            <div class="small text-secondary"><i class="fas fa-map-marker-alt text-danger me-2"></i>Sector - 125, Mohali</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6" data-bs-toggle="modal" data-bs-target="#enquiryModal">
-                    <div class="project-card">
-                        <div class="img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80">
-                        </div>
-                        <div class="p-4">
-                            <h5 class="fw-bold mb-1">Beverly Golf Avenue</h5>
-                            <p class="text-muted small">By Mohali City Homes</p>
-                            <div class="price-tag mb-3">₹ 1.37 Cr - 1.7 Cr</div>
-                            <div class="small text-secondary"><i class="fas fa-map-marker-alt text-danger me-2"></i>Phase 11, Mohali</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6" data-bs-toggle="modal" data-bs-target="#enquiryModal">
-                    <div class="project-card">
-                        <div class="img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80">
-                        </div>
-                        <div class="p-4">
-                            <h5 class="fw-bold mb-1">Mona City Home</h5>
-                            <p class="text-muted small">By Mohali City Homes</p>
-                            <div class="price-tag mb-3">₹ 35 Lacs - 39 Lacs</div>
-                            <div class="small text-secondary"><i class="fas fa-map-marker-alt text-danger me-2"></i>Sector-115, Mohali</div>
+    <div class="container-fluid py-5 bg-light  section-pa">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Featured Projects</h2>
+        </div>
+
+
+
+        <div class="row">
+            <div class="swiper mySwiperrr mt-3">
+                <div class="swiper-wrapper vibhor">
+
+                    <div class="swiper-slide">
+
+                        <div class="project-card" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+                            <div class="img-wrapper">
+                                <img
+                                    src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80">
+                            </div>
+                            <div class="p-4">
+                                <h5 class="fw-bold mb-1">Avenue 125</h5>
+                                <p class="text-muted small">By Ever Rich Buildcon</p>
+                                <div class="price-tag mb-3">₹ 42.9 Lacs - 1.06 Cr</div>
+                                <div class="small text-secondary"><i
+                                        class="fas fa-map-marker-alt text-danger me-2"></i>Sector - 125, Mohali</div>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- 2 -->
+                    <div class="swiper-slide">
+                        <div class="project-card" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+                            <div class="img-wrapper">
+                                <img
+                                    src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80">
+                            </div>
+                            <div class="p-4">
+                                <h5 class="fw-bold mb-1">Beverly Golf Avenue</h5>
+                                <p class="text-muted small">By Mohali City Homes</p>
+                                <div class="price-tag mb-3">₹ 1.37 Cr - 1.7 Cr</div>
+                                <div class="small text-secondary"><i
+                                        class="fas fa-map-marker-alt text-danger me-2"></i>Phase 11, Mohali</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- 3 -->
+                    <div class="swiper-slide" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+                        <div class="project-card">
+                            <div class="img-wrapper">
+                                <img
+                                    src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80">
+                            </div>
+                            <div class="p-4">
+                                <h5 class="fw-bold mb-1">Mona City Home</h5>
+                                <p class="text-muted small">By Mohali City Homes</p>
+                                <div class="price-tag mb-3">₹ 35 Lacs - 39 Lacs</div>
+                                <div class="small text-secondary"><i
+                                        class="fas fa-map-marker-alt text-danger me-2"></i>Sector-115, Mohali</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="project-card" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+                            <div class="img-wrapper">
+                                <img
+                                    src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80">
+                            </div>
+                            <div class="p-4">
+                                <h5 class="fw-bold mb-1">Avenue 125</h5>
+                                <p class="text-muted small">By Ever Rich Buildcon</p>
+                                <div class="price-tag mb-3">₹ 42.9 Lacs - 1.06 Cr</div>
+                                <div class="small text-secondary"><i
+                                        class="fas fa-map-marker-alt text-danger me-2"></i>Sector - 125, Mohali</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="project-card" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+                            <div class="img-wrapper">
+                                <img
+                                    src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80">
+                            </div>
+                            <div class="p-4">
+                                <h5 class="fw-bold mb-1">Avenue 125</h5>
+                                <p class="text-muted small">By Ever Rich Buildcon</p>
+                                <div class="price-tag mb-3">₹ 42.9 Lacs - 1.06 Cr</div>
+                                <div class="small text-secondary"><i
+                                        class="fas fa-map-marker-alt text-danger me-2"></i>Sector - 125, Mohali</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="project-card" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+                            <div class="img-wrapper">
+                                <img
+                                    src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80">
+                            </div>
+                            <div class="p-4">
+                                <h5 class="fw-bold mb-1">Avenue 125</h5>
+                                <p class="text-muted small">By Ever Rich Buildcon</p>
+                                <div class="price-tag mb-3">₹ 42.9 Lacs - 1.06 Cr</div>
+                                <div class="small text-secondary"><i
+                                        class="fas fa-map-marker-alt text-danger me-2"></i>Sector - 125, Mohali</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="project-card" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+                            <div class="img-wrapper">
+                                <img
+                                    src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80">
+                            </div>
+                            <div class="p-4">
+                                <h5 class="fw-bold mb-1">Avenue 125</h5>
+                                <p class="text-muted small">By Ever Rich Buildcon</p>
+                                <div class="price-tag mb-3">₹ 42.9 Lacs - 1.06 Cr</div>
+                                <div class="small text-secondary"><i
+                                        class="fas fa-map-marker-alt text-danger me-2"></i>Sector - 125, Mohali</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <div class="project-card" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+                            <div class="img-wrapper">
+                                <img
+                                    src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80">
+                            </div>
+                            <div class="p-4">
+                                <h5 class="fw-bold mb-1">Avenue 125</h5>
+                                <p class="text-muted small">By Ever Rich Buildcon</p>
+                                <div class="price-tag mb-3">₹ 42.9 Lacs - 1.06 Cr</div>
+                                <div class="small text-secondary"><i
+                                        class="fas fa-map-marker-alt text-danger me-2"></i>Sector - 125, Mohali</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="project-card" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+                            <div class="img-wrapper">
+                                <img
+                                    src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80">
+                            </div>
+                            <div class="p-4">
+                                <h5 class="fw-bold mb-1">Avenue 125</h5>
+                                <p class="text-muted small">By Ever Rich Buildcon</p>
+                                <div class="price-tag mb-3">₹ 42.9 Lacs - 1.06 Cr</div>
+                                <div class="small text-secondary"><i
+                                        class="fas fa-map-marker-alt text-danger me-2"></i>Sector - 125, Mohali</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- dhh -->
+                    <div class="swiper-pagination"></div>
+
+
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+
+    <!-- end card  -->
+    <div class="container-fluid mb-5 mt-5" style="background-color: #1a3c6d;">
+        <div class="filter-box pt-5 pb-5 text-start" style="background: transparent;">
+            <div class="row g-2">
+                <div class="tab-wrapper text-start d-flex mb-2">
+                    <h4 class="text-white">
+                        Interested to Know More About Our Services? Sign Up for a Free Consultation.</h4>
+                </div>
+                <div class="col-md-3">
+
+
+                    <input type="text" class="form-control rounded-0 p-3" placeholder="Your Name*">
+                </div>
+                <div class="col-md-3">
+                    <input type="email" class="form-control rounded-0 p-3" placeholder="Email*">
+
+                </div>
+
+                <div class="col-md-3">
+                    <input type="number" class="form-control rounded-0 p-3" placeholder="Phone Number*">
+
+                </div>
+
+                <div class="col-md-3">
+                    <button class="btn-search p-3" style="background-color: #c5a059 !important;"><i
+                            class="fa fa-search me-2"></i> SEARCH PROPERTY</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end says  -->
+      <div class="container-fluid pt-5 pb-5  section-pa">
+      <div class="text-center">
+        <h1 class="section-title">
+          Floor Plan</h1>
+        <h6 class="text-center">Find Your Perfect Home with a Trusted Real Estate Agent</h6>
+
+
+      </div>
+      <!-- <button class="btn-neww">Learn more</button> -->
+    <div class="row">
+      <div class="swiper mySwiperrr mt-3">
+        <div class="swiper-wrapper vibhor">
+
+          <div class="swiper-slide">
+            <div class="imgAmenties"
+              style="filter: blur(3px); border: 1.5px solid; padding: 15px; border-radius: 10px;">
+
+
+              <a href="https://i.pinimg.com/1200x/8a/4b/b7/8a4bb7a1acbd01498c157e2cc21769d7.jpg" class="popup-link">
+                <div class="amenity-card">
+                  <img src="https://i.pinimg.com/1200x/8a/4b/b7/8a4bb7a1acbd01498c157e2cc21769d7.jpg">
+                </div>
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <div class="swiper-slide">
+            <div class="imgAmenties"
+              style="filter: blur(3px); border: 1.5px solid; padding: 15px; border-radius: 10px;">
+
+
+              <a href="https://i.pinimg.com/736x/ed/9d/bc/ed9dbcfd9770e26138de29379881324b.jpg" class="popup-link">
+                <div class="amenity-card">
+                  <img src="https://i.pinimg.com/736x/ed/9d/bc/ed9dbcfd9770e26138de29379881324b.jpg">
+                </div>
+              </a>
+
+            </div>
+
+          </div>
+
+          <div class="swiper-slide">
+            <div class="imgAmenties"
+              style="filter: blur(3px); border: 1.5px solid; padding: 15px; border-radius: 10px;">
+
+
+              <a href="https://i.pinimg.com/736x/8d/48/a5/8d48a574e1bfb22af2606a20bdeb4da1.jpg" class="popup-link">
+                <div class="amenity-card">
+                  <img src="https://i.pinimg.com/736x/8d/48/a5/8d48a574e1bfb22af2606a20bdeb4da1.jpg">
+                </div>
+              </a>
+
+            </div>
+
+          </div>
+
+          <div class="swiper-slide">
+            <div class="imgAmenties"
+              style="filter: blur(3px); border: 1.5px solid; padding: 15px; border-radius: 10px;">
+
+
+              <a href="https://i.pinimg.com/1200x/cb/98/e2/cb98e25cd0785bdd078d58742dca8956.jpg" class="popup-link">
+                <div class="amenity-card">
+                  <img src="https://i.pinimg.com/1200x/cb/98/e2/cb98e25cd0785bdd078d58742dca8956.jpg">
+                </div>
+              </a>
+
+            </div>
+
+          </div>
+
+          <div class="swiper-slide">
+            <div class="imgAmenties"
+              style="filter: blur(3px); border: 1.5px solid; padding: 15px; border-radius: 10px;">
+
+
+              <a href="https://i.pinimg.com/1200x/82/71/70/827170e2a247b7c8aba6343caad73f1e.jpg" class="popup-link">
+                <div class="amenity-card">
+                  <img src="https://i.pinimg.com/1200x/82/71/70/827170e2a247b7c8aba6343caad73f1e.jpg">
+                </div>
+              </a>
+
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="imgAmenties"
+              style="filter: blur(3px); border: 1.5px solid; padding: 15px; border-radius: 10px;">
+
+
+              <a href="https://i.pinimg.com/1200x/d3/a4/6b/d3a46bf1cfd9149989f4bac234879f4f.jpg" class="popup-link">
+                <div class="amenity-card">
+                  <img src="https://i.pinimg.com/1200x/d3/a4/6b/d3a46bf1cfd9149989f4bac234879f4f.jpg">
+                </div>
+              </a>
+
+            </div>
+
+          </div>
+
+          <div class="swiper-slide">
+            <div class="imgAmenties"
+              style="filter: blur(3px); border: 1.5px solid; padding: 15px; border-radius: 10px;">
+
+
+              <a href="https://i.pinimg.com/1200x/96/8f/b3/968fb369f97aadd4f44e0d2e9ca36a1e.jpg" class="popup-link">
+                <div class="amenity-card">
+                  <img src="https://i.pinimg.com/1200x/96/8f/b3/968fb369f97aadd4f44e0d2e9ca36a1e.jpg">
+                </div>
+              </a>
+
+            </div>
+
+          </div>
+
+          <div class="swiper-slide">
+            <div class="imgAmenties"
+              style="filter: blur(3px); border: 1.5px solid; padding: 15px; border-radius: 10px;">
+
+
+              <a href="https://i.pinimg.com/736x/4c/d7/03/4cd7033d303d0816f0f546067fb3773f.jpg" class="popup-link">
+                <div class="amenity-card">
+                  <img src="https://i.pinimg.com/736x/4c/d7/03/4cd7033d303d0816f0f546067fb3773f.jpg">
+                </div>
+              </a>
+
+            </div>
+
+          </div>
+
+          <div class="swiper-slide">
+            <div class="imgAmenties"
+              style="filter: blur(3px); border: 1.5px solid; padding: 15px; border-radius: 10px;">
+
+
+              <a href="https://i.pinimg.com/1200x/22/f9/ca/22f9ca99b46b35f5e27cde0a1bf91a8e.jpg" class="popup-link">
+                <div class="amenity-card">
+                  <img src="https://i.pinimg.com/1200x/22/f9/ca/22f9ca99b46b35f5e27cde0a1bf91a8e.jpg">
+                </div>
+              </a>
+
+            </div>
+
+          </div>
+
+          <!-- dhh -->
+          <div class="swiper-pagination"></div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+     <!-- floor plan  -->
 
     <footer>
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-4">
                     <h5 class="text-white fw-bold mb-4">STAR INFRASTRUCTURE</h5>
-                    <p class="small">Leading real estate consultants in Tricity, providing expert advice for residential and commercial investments.</p>
+                    <p class="small">Leading real estate consultants in Tricity, providing expert advice for residential
+                        and commercial investments.</p>
                 </div>
                 <div class="col-lg-4">
                     <h5 class="text-white fw-bold mb-4">CONTACT INFO</h5>
@@ -197,7 +531,249 @@
             </div>
         </div>
     </div>
+    <!-- script start with some js  -->
+
+
+
+
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.popup-gallery').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                gallery: {
+                    enabled: true
+                },
+                titleSrc: 'title'
+            });
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+        integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            watchSlidesProgress: true,
+            // slidesPerView: 3,
+            spaceBetween: 15,
+            loop: true,
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    //   spaceBetween: 20,
+                },
+                // 480: {
+                //     slidesPerView: 2,
+                // },
+                768: {
+                    slidesPerView: 2,
+                    //   spaceBetween: 40,
+                },
+                1200: {
+                    slidesPerView: 3,
+                    //   spaceBetween: 50,
+                },
+            },
+
+
+        });
+    </script>
+
+    <!-- ddcd -->
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiperr", {
+            watchSlidesProgress: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            // slidesPerView: 3,
+            spaceBetween: 20,
+            loop: true,
+            breakpoints: {
+                1200: {
+                    slidesPerView: 1,
+                    //   spaceBetween: 20,
+                },
+
+
+            },
+
+
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiperrr", {
+            watchSlidesProgress: true,
+            // slidesPerView: 3,
+            pagination: {
+                // el: '.swiper-pagination',
+                // clickable: true,
+            },
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            spaceBetween: 20,
+            loop: true,
+            breakpoints: {
+                // when window width is >= 320px (Mobile)
+                320: {
+                    slidesPerView: 1,
+                    slidesPerGroup: 1,
+                },
+                // when window width is >= 576px (Small screens / Tablet)
+                576: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                },
+                // when window width is >= 992px (Desktop)
+                992: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3,
+                }
+            }
+        });
+
+    </script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.js"></script> -->
+
+    <script>
+        jQuery(function ($) {
+            var $navbar = $('.navbar');
+            $(window).scroll(function (event) {
+                var $current = $(this).scrollTop();
+                if ($current > 0) {
+                    $navbar.addClass('navbar-color');
+
+                }
+                else {
+                    $navbar.removeClass('navbar-color');
+                }
+            }
+            );
+        });
+    </script>
+    <script>
+        jQuery(function ($) {
+            var $navbar = $('.navbar');
+            $(window).scroll(function (event) {
+                var $current = $(this).scrollTop();
+                if ($current > 0) {
+                    $navbar.addClass('navbar-color');
+
+                }
+                else {
+                    $navbar.removeClass('navbar-color');
+                }
+            }
+            );
+        });
+    </script>
+    <script>
+        // Minimal Intersection Observer to toggle .in-view on scroll
+        const revealables = document.querySelectorAll('.fade-up');
+        const io = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                    // Uncomment below if you want it to animate every time it re-enters
+                    // else keep it once-only:
+                    obs.unobserve(entry.target);
+                }
+            });
+        }, { root: null, rootMargin: '0px 0px -10% 0px', threshold: 0.08 });
+
+        revealables.forEach(el => io.observe(el));
+    </script>
+
+    <script>
+        window.onload = function () {
+            document.getElementById('preloader').style.display = "none"
+            document.getElementById('landing').style.display = "block"
+
+        };
+    </script>
+
+
+    <!-- jQuery -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Magnific Popup JS -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Magnific Popup JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".popup-link").magnificPopup({
+                type: "image",
+                gallery: {
+                    enabled: true,
+                }
+            });
+        });
+
+
+
+
+    </script>
+     <script>
+    $(document).ready(function () {
+      $(".popup-link").magnificPopup({
+        type: "image",
+        gallery: {
+          enabled: true,
+        }
+      });
+    });
+
+
+
+
+  </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+            function initMagnificPopup(selector) {
+                $(".gallery-item").magnificPopup({
+
+                    type: 'image',
+                    gallery: {
+                        enabled: true
+                    },
+
+                });
+            }
+            initMagnificPopup('#exterior .gallery-grid');
+            initMagnificPopup('#interior .gallery-grid');
+            initMagnificPopup('#amenities .gallery-grid');
+
+            var tabEl = document.getElementById('galleryTab');
+
+            tabEl.addEventListener('shown.bs.tab', function (event) {
+            });
+        });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
