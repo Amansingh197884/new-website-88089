@@ -274,4 +274,54 @@
             transition: 0.4s;
         }
 
-   
+   /* animation css start  */
+        :root {
+            --luxury-blue: #2c5282;
+            --text-gray: #4a5568;
+        }
+
+      
+
+        
+
+        .main-title {
+            color: var(--luxury-blue);
+            font-weight: 300;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            font-size: clamp(1.8rem, 5vw, 3.5rem);
+        }
+
+        .sub-title {
+            letter-spacing: 4px;
+            font-weight: 400;
+            color: var(--text-gray);
+            font-size: 1rem;
+            margin-bottom: 40px;
+        }
+
+        .description-text {
+            color: var(--text-gray);
+            /* line-height: 1.8; */
+            margin: 0 auto;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+
+        /* Hover effect for neighborhoods */
+        .highlight-hood {
+            font-weight: 600;
+            color: var(--brand-gold);
+            transition: color 0.3s ease;
+        }
+
+        /* Small divider line animation */
+        .divider {
+            width: 50px;
+            height: 2px;
+            background: var(--luxury-blue);
+            margin: 20px auto;
+            transition: width 0.5s ease;
+        }
+
+       

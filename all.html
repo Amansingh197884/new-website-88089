@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Vegas Luxury Real Estate</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <style>
+        :root {
+            --luxury-blue: #2c5282;
+            --text-gray: #4a5568;
+        }
+
+        body {
+            background-color: #fcfcfc;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .hero-section {
+            padding: 80px 20px;
+            overflow: hidden;
+        }
+
+        .main-title {
+            color: var(--luxury-blue);
+            font-weight: 300;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            font-size: clamp(1.8rem, 5vw, 3.5rem);
+        }
+
+        .sub-title {
+            letter-spacing: 4px;
+            font-weight: 400;
+            color: var(--text-gray);
+            font-size: 1rem;
+            margin-bottom: 40px;
+        }
+
+        .description-text {
+            color: var(--text-gray);
+            line-height: 1.8;
+            max-width: 900px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+
+        /* Hover effect for neighborhoods */
+        .highlight-hood {
+            font-weight: 600;
+            color: var(--luxury-blue);
+            transition: color 0.3s ease;
+        }
+
+        /* Small divider line animation */
+        .divider {
+            width: 50px;
+            height: 2px;
+            background: var(--luxury-blue);
+            margin: 20px auto;
+            transition: width 0.5s ease;
+        }
+
+        .hero-section:hover .divider {
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+
+<section class="hero-section d-flex align-items-center min-vh-100">
+    <div class="container text-center">
+        <h1 class="main-title animate__animated animate__fadeInDown">
+            Las Vegas Luxury Real Estate
+        </h1>
+
+        <p class="sub-title animate__animated animate__fadeIn animate__delay-1s">
+            BUY. SELL. INVEST.
+        </p>
+
+        <div class="divider animate__animated animate__zoomIn animate__delay-1s"></div>
+
+        <div class="description-text animate__animated animate__fadeInUp animate__delay-2s">
+            <p>
+                As a seasoned luxury Las Vegas Real Estate Agent, <strong>Gavin</strong> has the local knowledge and thorough expertise that is critical to success in this competitive, niche market. 
+            </p>
+            <p>
+                Having sold a number of multi-million dollar homes in deluxe neighborhoods like 
+                <span class="highlight-hood">The Ridges</span>, 
+                <span class="highlight-hood">MacDonald Highlands</span>, and 
+                <span class="highlight-hood">Red Rock Country Club</span>, 
+                he understands that your home is much more than a building and some possessions. 
+            </p>
+            <p class="mt-4">
+                Whether you are looking to buy or sell luxury Las Vegas real estate, Gavin is dedicated to providing personalized service tailored to your specific needs.
+            </p>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
