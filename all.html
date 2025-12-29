@@ -1,147 +1,222 @@
+
+</html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Max Estates News Section</title>
+    <title>Sustainable Practices - Video Background</title>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
     <style>
-        body { background-color: #fcf9f5; font-family: 'Serif', sans-serif; }
-        
-        .main-slider-container {
-            background: #fff;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-        
-        .carousel-item img {
-            height: 450px;
-            object-fit: cover;
+        /* Global Styles */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            overflow-x: hidden;
         }
 
-        .news-content-box {
-            padding: 40px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        /* Bottom Thumbnails */
-        .thumb-card {
-            cursor: pointer;
-            transition: transform 0.3s ease;
-            border: none;
-            border-radius: 10px;
-            overflow: hidden;
+        /* Video Background Container */
+        .video-background-section {
             position: relative;
-        }
-
-        .thumb-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .thumb-card img {
-            height: 180px;
-            object-fit: cover;
-            filter: brightness(0.8);
-        }
-
-        .thumb-caption {
-            position: absolute;
-            bottom: 0;
-            padding: 10px;
-            color: white;
-            font-size: 0.85rem;
-            background: linear-gradient(transparent, rgba(0,0,0,0.8));
             width: 100%;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            padding: 60px 0;
         }
 
-        .btn-read-more {
-            border: 1px solid #333;
-            border-radius: 20px;
-            padding: 8px 25px;
-            width: fit-content;
+        /* The actual video */
+        .video-docker {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .video-docker video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Dark overlay to make text readable */
+        .video-docker::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3); 
+        }
+
+        /* Diamond Card Styling */
+        .diamond-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .diamond-card {
+            background-color: rgba(255, 255, 255, 0.9);
+            width: 320px;
+            height: 320px;
+            /* Creates the Diamond Shape */
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 45px;
+            transition: all 0.4s ease;
+            text-align: center;
+            color: #5d4037; /* Earthy Brown Tone */
+        }
+
+        .diamond-card:hover {
+            transform: scale(1.05);
+            background-color: #ffffff;
+        }
+
+        .diamond-card h5 {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        .diamond-card p {
+            font-size: 0.85rem;
+            line-height: 1.5;
+            margin-bottom: 0;
+        }
+
+        .icon-box img {
+            width: 45px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        /* Typography */
+        h2.main-title {
+            font-weight: 300;
+            letter-spacing: 2px;
+            font-size: 2.5rem;
+        }
+
+        .sub-title {
+            font-weight: 400;
+            font-size: 1rem;
+            margin-bottom: 50px;
+        }
+
+        .read-more {
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 5px;
+            text-decoration: none;
+            color: white;
+            border-bottom: 2px solid white;
+            padding-bottom: 5px;
+            transition: 0.3s;
+            display: inline-block;
+            margin-top: 40px;
+        }
+
+        .read-more:hover {
+            color: #ccc;
+            border-color: #ccc;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 991px) {
+            .diamond-card {
+                width: 280px;
+                height: 280px;
+                padding: 30px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h2.main-title { font-size: 1.8rem; }
+            .diamond-card {
+                width: 260px;
+                height: 260px;
+            }
         }
     </style>
 </head>
 <body>
 
-<div class="container py-5">
-    <h2 class="text-center mb-1">News and Media</h2>
-    <p class="text-center text-muted mb-5">Access the latest news and updates about Max Estates Limited here.</p>
-
-    <div id="newsSlider" class="carousel slide main-slider-container mb-4" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            
-            <div class="carousel-item active">
-                <div class="row g-0">
-                    <div class="col-md-7">
-                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800" class="d-block w-100" alt="News 1">
-                    </div>
-                    <div class="col-md-5 news-content-box">
-                        <h3 class="mb-3">Max Estates achieves dual 5-star rating in GRESB 2025</h3>
-                        <p class="text-muted">Max Estates has achieved a high score of 100 points in the Development Category of the 2025 Global Real Estate Sustainability...</p>
-                        <a href="#" class="btn btn-read-more mt-3">Read More</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carousel-item">
-                <div class="row g-0">
-                    <div class="col-md-7">
-                        <img src="https://images.unsplash.com/photo-1449156001935-d25a01ca410e?auto=format&fit=crop&w=800" class="d-block w-100" alt="News 2">
-                    </div>
-                    <div class="col-md-5 news-content-box">
-                        <h3 class="mb-3">Delhi-NCR AQI crisis puts spotlight on wellness homes</h3>
-                        <p class="text-muted">Experts say air quality needs city-level fixes and Max Estates is leading the way with integrated air filtration systems.</p>
-                        <a href="#" class="btn btn-read-more mt-3">Read More</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carousel-item">
-                <div class="row g-0">
-                    <div class="col-md-7">
-                        <img src="https://images.unsplash.com/photo-1545324418-f1d3ac1ef739?auto=format&fit=crop&w=800" class="d-block w-100" alt="News 3">
-                    </div>
-                    <div class="col-md-5 news-content-box">
-                        <h3 class="mb-3">Max Estates Plans Rs 9,500 Crore Project</h3>
-                        <p class="text-muted">New project launches across Noida and Gurgaon focusing on sustainable luxury living.</p>
-                        <a href="#" class="btn btn-read-more mt-3">Read More</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+<section class="video-background-section">
+    <div class="video-docker">
+          <video width="1119" height="1081" class="lazy-video embed-responsive-item responsive-video d-none-1 d-sm-block-1" loop="" muted="" autoplay="autoplay" playsinline="">
+        <source data-src="https://d3dy70zhjs5mi1.cloudfront.net/s3fs-public/2023-08/Orl%20Homepage%20Sustainable%20Practice%20010823-1.m4v.mp4" type="video/mp4" src="https://d3dy70zhjs5mi1.cloudfront.net/s3fs-public/2023-08/Orl%20Homepage%20Sustainable%20Practice%20010823-1.m4v.mp4">
+        <source data-src="https://d3dy70zhjs5mi1.cloudfront.net/s3fs-public/2023-08/Orl%20Homepage%20Sustainable%20Practice%20010823-1.m4v.mp4" type="video/ogg" src="https://d3dy70zhjs5mi1.cloudfront.net/s3fs-public/2023-08/Orl%20Homepage%20Sustainable%20Practice%20010823-1.m4v.mp4">
+    </video>
     </div>
 
-    <div class="row g-3">
-        <div class="col-6 col-md-3">
-            <div class="card thumb-card" data-bs-target="#newsSlider" data-bs-slide-to="0">
-                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=400" alt="Thumb 1">
-                <div class="thumb-caption">GRESB 5-Star Rating</div>
+    <div class="container text-center text-white position-relative">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="main-title">Sustainable Practices</h2>
+                <p class="sub-title">Committed to retain environmental harmony</p>
             </div>
         </div>
-        <div class="col-6 col-md-3">
-            <div class="card thumb-card" data-bs-target="#newsSlider" data-bs-slide-to="1">
-                <img src="https://images.unsplash.com/photo-1449156001935-d25a01ca410e?auto=format&fit=crop&w=400" alt="Thumb 2">
-                <div class="thumb-caption">Delhi-NCR AQI Crisis</div>
+
+        <div class="row g-0 align-items-center justify-content-center">
+            <div class="col-lg-4 col-md-6 diamond-wrapper">
+                <div class="diamond-card">
+                    <div>
+                        <div class="icon-box">
+                            <img src="https://img.icons8.com/ios/100/795548/home-leaf.png" alt="Environment">
+                        </div>
+                        <h5>Environment:</h5>
+                        <p>We prioritize caring for the environment in all our business activities, aiming to not only protect but also elevate its quality.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 diamond-wrapper">
+                <div class="diamond-card">
+                    <div>
+                        <div class="icon-box">
+                            <img src="https://img.icons8.com/ios/100/795548/conference-call.png" alt="Social">
+                        </div>
+                        <h5>Social:</h5>
+                        <p>We strive to enhance the prosperity of all stakeholders influenced by our business, whether directly or indirectly.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 diamond-wrapper">
+                <div class="diamond-card">
+                    <div>
+                        <div class="icon-box">
+                            <img src="https://img.icons8.com/ios/100/795548/law.png" alt="Governance">
+                        </div>
+                        <h5>Governance:</h5>
+                        <p>We ethically prioritize the interests of all stakeholders by embodying our core values in leadership.</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col-6 col-md-3">
-            <div class="card thumb-card" data-bs-target="#newsSlider" data-bs-slide-to="2">
-                <img src="https://images.unsplash.com/photo-1545324418-f1d3ac1ef739?auto=format&fit=crop&w=400" alt="Thumb 3">
-                <div class="thumb-caption">9,500 Cr Project Launch</div>
-            </div>
-        </div>
-        <div class="col-6 col-md-3">
-            <div class="card thumb-card" data-bs-target="#newsSlider" data-bs-slide-to="0"> <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=400" alt="Thumb 4">
-                <div class="thumb-caption">Intergenerational Living</div>
+
+        <div class="row">
+            <div class="col-12">
+                <a href="#" class="read-more">Read More</a>
             </div>
         </div>
     </div>
-</div>
+</section>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

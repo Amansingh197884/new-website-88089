@@ -479,3 +479,135 @@
         }
 
 /* new card end slide  */
+/* video play css  */
+.video-background-section {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            padding: 60px 0;
+        }
+
+        /* The actual video */
+        .video-docker {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .video-docker video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video-docker::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.); 
+        }
+
+        .diamond-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .diamond-card {
+            background-color: rgba(255, 255, 255, 0.9);
+            width: 320px;
+            height: 320px;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 55px;
+            transition: all 0.4s ease;
+            text-align: center;
+            color: #5d4037;
+            border-radius: 20px;
+        }
+
+        .diamond-card:hover {
+            transform: scale(1.05);
+            background-color: #ffffff;
+        }
+
+        .diamond-card h5 {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        .diamond-card p {
+            font-size: 0.85rem;
+            line-height: 1.5;
+            margin-bottom: 0;
+        }
+
+        .icon-box img {
+            width: 45px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        h2.main-title {
+            font-weight: 300;
+            letter-spacing: 2px;
+            font-size: 2.5rem;
+              color: #fff;
+        }
+
+        .sub-title {
+            font-weight: 400;
+            font-size: 1rem;
+            margin-bottom: 50px;
+            color: #fff;
+        }
+
+        .read-more {
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 5px;
+            text-decoration: none;
+            color: white;
+            border-bottom: 2px solid white;
+            padding-bottom: 5px;
+            transition: 0.3s;
+            display: inline-block;
+            margin-top: 40px;
+        }
+
+        .read-more:hover {
+            color: #ccc;
+            border-color: #ccc;
+        }
+
+     
+        @media (max-width: 991px) {
+            .diamond-card {
+                width: 280px;
+                height: 280px;
+                padding: 30px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h2.main-title { font-size: 1.8rem; }
+            .diamond-card {
+                width: 260px;
+                height: 260px;
+            }
+        }
+/* end video play  */
