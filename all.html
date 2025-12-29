@@ -3,104 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Las Vegas Luxury Real Estate</title>
+    <title>Responsive Client Slider with Fade Effect</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     
     <style>
-        :root {
-            --luxury-blue: #2c5282;
-            --text-gray: #4a5568;
-        }
-
-        body {
-            background-color: #fcfcfc;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        .hero-section {
-            padding: 80px 20px;
+        .client-section {
+            background-color: #ffffff; 
+            padding: 100px 0;
+            color: white;
             overflow: hidden;
         }
 
-        .main-title {
-            color: var(--luxury-blue);
-            font-weight: 300;
-            letter-spacing: 6px;
-            text-transform: uppercase;
-            font-size: clamp(1.8rem, 5vw, 3.5rem);
+        .logo-slider {
+            position: relative;
+            width: 100%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+            cursor: pointer;
+            -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 15%, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
+            mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 15%, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
         }
 
-        .sub-title {
-            letter-spacing: 4px;
-            font-weight: 400;
-            color: var(--text-gray);
-            font-size: 1rem;
-            margin-bottom: 40px;
+        .logo-track {
+            display: flex;
+            width: calc(250px * 10); 
+            animation: scroll-left 25s linear infinite;
         }
 
-        .description-text {
-            color: var(--text-gray);
-            line-height: 1.8;
-            max-width: 900px;
-            margin: 0 auto;
-            font-size: 1.1rem;
-            text-align: center;
+        .logo-card {
+            width: 230px;
+            height: 100px;
+            background: #ffffff;
+            margin: 0 10px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
         }
 
-        /* Hover effect for neighborhoods */
-        .highlight-hood {
-            font-weight: 600;
-            color: var(--luxury-blue);
-            transition: color 0.3s ease;
+        .logo-card img {
+            max-width: 70%;
+            height: auto;
+            object-fit: contain;
         }
 
-        /* Small divider line animation */
-        .divider {
-            width: 50px;
-            height: 2px;
-            background: var(--luxury-blue);
-            margin: 20px auto;
-            transition: width 0.5s ease;
+        @keyframes scroll-left {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(calc(-250px * 5)); }
         }
 
-        .hero-section:hover .divider {
-            width: 150px;
+        .paused {
+            animation-play-state: paused !important;
+        }
+
+        @media (max-width: 768px) {
+            .logo-card {
+                width: 180px;
+                height: 85px;
+            }
+            @keyframes scroll-left {
+                0% { transform: translateX(0); }
+                100% { transform: translateX(calc(-200px * 5)); }
+            }
         }
     </style>
 </head>
 <body>
 
-<section class="hero-section d-flex align-items-center min-vh-100">
+<section class="client-section">
     <div class="container text-center">
-        <h1 class="main-title animate__animated animate__fadeInDown">
-            Las Vegas Luxury Real Estate
-        </h1>
-
-        <p class="sub-title animate__animated animate__fadeIn animate__delay-1s">
-            BUY. SELL. INVEST.
+        <h2 class="fw-bold mb-3">Our Clients Trust Us</h2>
+        <p class="text-white-50 mb-5 mx-auto" style="max-width: 600px;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar.
         </p>
 
-        <div class="divider animate__animated animate__zoomIn animate__delay-1s"></div>
-
-        <div class="description-text animate__animated animate__fadeInUp animate__delay-2s">
-            <p>
-                As a seasoned luxury Las Vegas Real Estate Agent, <strong>Gavin</strong> has the local knowledge and thorough expertise that is critical to success in this competitive, niche market. 
-            </p>
-            <p>
-                Having sold a number of multi-million dollar homes in deluxe neighborhoods like 
-                <span class="highlight-hood">The Ridges</span>, 
-                <span class="highlight-hood">MacDonald Highlands</span>, and 
-                <span class="highlight-hood">Red Rock Country Club</span>, 
-                he understands that your home is much more than a building and some possessions. 
-            </p>
-            <p class="mt-4">
-                Whether you are looking to buy or sell luxury Las Vegas real estate, Gavin is dedicated to providing personalized service tailored to your specific needs.
-            </p>
+        <div class="logo-slider" id="slider">
+            <div class="logo-track" id="track">
+                <div class="logo-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeqiAi-cAERqe-9FKW0wUUQapPf2xX1utTGQ&s" alt="Logo"></div>
+                <div class="logo-card"><img src="https://media.licdn.com/dms/image/v2/C4E1BAQFqVlh71ZQlTA/company-background_10000/company-background_10000/0/1602687864449/galaxyrealestateuk_cover?e=2147483647&v=beta&t=HKOkncQ0uKPLfPJ08G2xeq2jDac09qUDYsZ1nLKctGA" alt="Logo"></div>
+                <div class="logo-card"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Max_Estates_logo.svg/1280px-Max_Estates_logo.svg.png" alt="Logo"></div>
+                <div class="logo-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf1tUrNl6ABRVlnIoa0-IXszz_MGgb7Dmkkw&s" alt="Logo"></div>
+                <div class="logo-card"><img src="https://mma.prnewswire.com/media/1308693/GPL_Logo.jpg?p=facebook" alt="Logo"></div>
+                
+                <div class="logo-card"><img src="https://newprojects.99acres.com/projects/jlg_properties/sawasdee_jlg_galleria/fb6jw179.png" alt="Logo"></div>
+                <div class="logo-card"><img src="https://mldlprodstorage.blob.core.windows.net/live/2022/10/mahindra_logo_new_horizontal-scaled.webp" alt="Logo"></div>
+                <div class="logo-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSn9y5G_u_5g1C2a0zKV0wS6NLzmHieDcnZw&s" alt="Logo"></div>
+                <div class="logo-card"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Lodha---New-LOgo.png" alt="Logo"></div>
+                <div class="logo-card"><img src="https://ganeshrealestates.com/images/ganesh_logo.png" alt="Logo"></div>
+            </div>
         </div>
+
+        <!-- <p class="mt-4 small text-secondary">CLICK TO PAUSE / PLAY</p> -->
     </div>
 </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    const slider = document.getElementById('slider');
+    const track = document.getElementById('track');
+
+    slider.addEventListener('click', () => {
+        track.classList.toggle('paused');
+    });
+</script>
+
 </body>
 </html>

@@ -103,6 +103,7 @@
             background: #fff;
             cursor: pointer;
             overflow: hidden;
+            
         }
 
         .project-card:hover {
@@ -115,8 +116,11 @@
             height: 240px;
             overflow: hidden;
             position: relative;
+            
         }
-
+.img-box1 img{
+    width: 800px;
+}
         .img-wrapper img {
             width: 100%;
             height: 100%;
@@ -322,5 +326,83 @@
             transition: width 0.5s ease;
         }
 /* new alert  */
+.contnet-box p{
+    line-height: 1.6;
+    letter-spacing: 1.1;
+}
+.img-box img{
+    width: 540px;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    /* box-shadow:   rgb(197, 160, 89, 0.4) -5px 5px, rgba(197, 160, 89, 0.3) -10px 10px, rgba(197, 160, 89, 0.2) -15px 15px, rgba(197, 160, 89, 0.1) -20px 20px, rgba(197, 160, 89, 0.05) -25px 25px; */
+}      
+.list ul li{
+    /* list-style: none; */
+    line-height: 2.2;
+    margin: 0 !important;
+} 
+/* slide css  */
+.client-section {
+            background-color: #ffffff; 
+            padding: 100px 0;
+            color: white;
+            overflow: hidden;
+        }
 
-       
+        .logo-slider {
+            position: relative;
+            width: 100%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+            cursor: pointer;
+            -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 15%, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
+            mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 15%, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
+        }
+
+        .logo-track {
+            display: flex;
+            width: calc(250px * 10); 
+            animation: scroll-left 25s linear infinite;
+        }
+
+        .logo-card {
+            width: 230px;
+            height: 100px;
+            background: #ffffff;
+            margin: 0 10px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .logo-card img {
+            max-width: 70%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        @keyframes scroll-left {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(calc(-250px * 5)); }
+        }
+
+        .paused {
+            animation-play-state: paused !important;
+        }
+
+        @media (max-width: 768px) {
+            .logo-card {
+                width: 180px;
+                height: 85px;
+            }
+            @keyframes scroll-left {
+                0% { transform: translateX(0); }
+                100% { transform: translateX(calc(-200px * 5)); }
+            }
+        }
+/* slide css end  */
