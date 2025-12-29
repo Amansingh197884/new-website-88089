@@ -426,10 +426,10 @@
         .news-content-box {
             padding: 40px;
             display: flex;
+            color: #fff;
             flex-direction: column;
             justify-content: center;
-            background-color: #c59f5942;
-            /* color: #fff; */
+            background-image:linear-gradient(rgba(241, 237, 237, 0.2), rgba(0, 0, 0, 0)), url(https://anantrajestate.com/images/are-pattern.jpg);
         }
 
         /* Bottom Thumbnails */
@@ -463,15 +463,19 @@
         }
 
         .btn-read-more {
-            border: 1px solid #333;
+            border: 1px solid #ffffff;
             border-radius: 20px;
             padding: 8px 25px;
             width: fit-content;
             transition: 0.3s;
+            color: #fff;
         }
         .btn-read-more:hover{
             background-color: #c5a059;
             color: #fff;
+        }
+        .news-content-box p{
+            color: #fff !important;
         }
 
 /* new card end slide  */
