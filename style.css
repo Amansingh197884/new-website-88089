@@ -250,6 +250,9 @@
             align-items: center;
             gap: 10px;
         }
+        .btn-outline-dark:hover{
+                    
+        }
 
         /* floor css  */
         .imgAmenties {
@@ -309,7 +312,7 @@
             /* line-height: 1.8; */
             margin: 0 auto;
             font-size: 1.1rem;
-            text-align: center;
+            /* text-align: center; */
         }
 
         .highlight-hood {
@@ -406,3 +409,69 @@
             }
         }
 /* slide css end  */
+
+/* new card slide box  */
+  .main-slider-container {
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        
+        .carousel-item img {
+            height: 450px;
+            object-fit: cover;
+        }
+
+        .news-content-box {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #c59f5942;
+            /* color: #fff; */
+        }
+
+        /* Bottom Thumbnails */
+        .thumb-card {
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .thumb-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .thumb-card img {
+            height: 180px;
+            object-fit: cover;
+            filter: brightness(0.8);
+        }
+
+        .thumb-caption {
+            position: absolute;
+            bottom: 0;
+            padding: 10px;
+            color: white;
+            font-size: 0.85rem;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            width: 100%;
+        }
+
+        .btn-read-more {
+            border: 1px solid #333;
+            border-radius: 20px;
+            padding: 8px 25px;
+            width: fit-content;
+            transition: 0.3s;
+        }
+        .btn-read-more:hover{
+            background-color: #c5a059;
+            color: #fff;
+        }
+
+/* new card end slide  */
