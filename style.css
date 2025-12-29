@@ -597,17 +597,17 @@
      
         @media (max-width: 991px) {
             .diamond-card {
-                width: 280px;
-                height: 280px;
-                padding: 30px;
+                width: 380px;
+                height: 380px;
+                padding: 45px;
             }
         }
 
         @media (max-width: 576px) {
             h2.main-title { font-size: 1.8rem; }
             .diamond-card {
-                width: 260px;
-                height: 260px;
+                width: 330px;
+                height: 330px;
             }
         }
 /* end video play  */
