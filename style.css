@@ -299,7 +299,7 @@
             font-size: clamp(1.8rem, 5vw, 3.5rem);
         }
 
-        .sub-title {
+        .sub-titlee {
             letter-spacing: 4px;
             font-weight: 400;
             color: var(--text-gray);
@@ -308,7 +308,7 @@
         }
 
         .description-text {
-            color: var(--text-gray);
+            color: #232222;
             /* line-height: 1.8; */
             margin: 0 auto;
             font-size: 1.1rem;
@@ -611,3 +611,81 @@
             }
         }
 /* end video play  */
+ .prestige-section {
+            background-color: #fff;
+            padding: 80px 0;
+        }
+
+         .prestige-section .sub-heading {
+            letter-spacing: 2px;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--brand-gold);
+        }
+
+       .prestige-section  .main-title {
+            font-weight: 400;
+            line-height: 1.2;
+            color: #212529;
+            font-size: 25px;
+            letter-spacing: 1.2px;
+        }
+
+        .prestige-section .description {
+            color: #373738;
+            line-height: 1.6;
+            font-size: 17px;
+        }
+
+        .prestige-section .see-details {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            font-size: 13px;
+            border-bottom: 2px solid #000;
+            padding-bottom: 5px;
+            transition: 0.3s;
+        }
+
+        .prestige-section .see-details:hover {
+            color: #555;
+            border-color: #555;
+        }
+
+        /* Stats Styling */
+        .prestige-section .stat-box {
+            border-left: 1px solid #dee2e6;
+            padding-left: 25px;
+            margin-bottom: 40px;
+        }
+
+        .prestige-section .counter-value {
+            font-size: 3rem;
+            font-weight: 300;
+            display: inline-block;
+        }
+
+        .prestige-section .plus-sign {
+            font-size: 2.5rem;
+            font-weight: 300;
+            color: var(--brand-gold);
+        }
+
+        .prestige-section .stat-label {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #1d1d1e;
+            letter-spacing: 1px;
+            margin-top: 5px;
+            font-weight: 510;
+        }
+
+        @media (max-width: 767px) {
+           .prestige-section  .stat-box {
+                border-left: none;
+                border-bottom: 1px solid #dee2e6;
+                padding-left: 0;
+                padding-bottom: 20px;
+                text-align: center;
+            }
+        }
